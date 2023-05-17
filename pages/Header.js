@@ -1,5 +1,7 @@
 import React from "react";
 
+import * as Icons from "react-icons/fa";
+
 const Header = () => {
   return (
     <header class="flex flex-wrap sm:justify-start sm:flex-col z-50 w-full bg-white border-b border-gray-200 text-sm pb-2 sm:pb-0">
@@ -42,11 +44,12 @@ const Header = () => {
       >
         <div class="flex items-center justify-between">
           <a
-            class="flex-none text-xl font-semibold"
+            class="flex items-center gap-2 text-3xl font-semibold"
             href="#"
             aria-label="Brand"
           >
-            Brand
+            <Icons.FaPiedPiper />
+            BLOG
           </a>
           <div class="sm:hidden">
             <button
@@ -90,13 +93,13 @@ const Header = () => {
               href="#"
               aria-current="page"
             >
-              Landing
+              Home
             </a>
             <a
               class="font-medium text-gray-800 hover:text-gray-500 sm:py-6 "
               href="#"
             >
-              Account
+              World News
             </a>
             <a
               class="font-medium text-gray-800 hover:text-gray-500 sm:py-6 "
